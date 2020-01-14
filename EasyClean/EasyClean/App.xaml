@@ -18,6 +18,7 @@
         <Style TargetType="Button" x:Key="InfoButton">
             <Setter Property="BackgroundColor" Value="{StaticResource bgBtnColor}"/>
             <Setter Property="TextColor" Value="{StaticResource fgBtnColor}"/>
+            <Setter Property="CornerRadius" Value="25"/>
         </Style>
         <!--Labels-->
         <Style TargetType="Label" x:Key="TitleLabel">
