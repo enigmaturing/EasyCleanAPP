@@ -4,13 +4,10 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="EasyClean.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+             x:Class="EasyClean.Pages.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo.png"></Image>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
