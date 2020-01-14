@@ -6,6 +6,23 @@
              mc:Ignorable="d"
              x:Class="EasyClean.App">
     <Application.Resources>
+        <!--COLORS-->
+        <!--Buttons-->
+        <Color x:Key="bgBtnColor">#3498DB</Color>
+        <Color x:Key="fgBtnColor">White</Color>
+        <!--Labels-->
+        <Color x:Key="fgTitleColor">#3498DB</Color>
 
+        <!--STYLES-->
+        <!--Buttons-->
+        <Style TargetType="Button" x:Key="InfoButton">
+            <Setter Property="BackgroundColor" Value="{StaticResource bgBtnColor}"/>
+            <Setter Property="TextColor" Value="{StaticResource fgBtnColor}"/>
+        </Style>
+        <!--Labels-->
+        <Style TargetType="Label" x:Key="TitleLabel">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="TextColor" Value="{StaticResource fgTitleColor}"/>
+        </Style>
     </Application.Resources>
 </Application>
