@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="EasyClean.Pages.LoginPage"
              BackgroundColor="White">
+    <ContentPage.Padding>
+        <OnPlatform	x:TypeArguments="Thickness"
+				                iOS="0,20,0,0"/>
+    </ContentPage.Padding>
     <ContentPage.Content>
         <Grid Margin="30">
             <Grid.RowDefinitions>
