@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace EasyClean.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class MyProfilePage : ContentPage
     {
-        public LoginPage()
+        public MyProfilePage()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Clicked(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new MasterPage();
         }
     }
 }
