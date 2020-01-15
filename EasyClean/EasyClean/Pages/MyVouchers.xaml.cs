@@ -15,6 +15,7 @@ namespace EasyClean.Pages
         public MyVouchers()
         {
             InitializeComponent();
+            Title = "meine Gutscheine";
         }
     }
 }
