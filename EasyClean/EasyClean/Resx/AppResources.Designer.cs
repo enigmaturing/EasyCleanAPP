@@ -70,6 +70,15 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create profile.
+        /// </summary>
+        internal static string CreateProfile {
+            get {
+                return ResourceManager.GetString("CreateProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E-Mail Address.
         /// </summary>
         internal static string EmailHint {

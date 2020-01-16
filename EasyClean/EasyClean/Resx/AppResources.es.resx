@@ -120,6 +120,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="CreateProfile" xml:space="preserve">
+    <value>Crear perfil</value>
+  </data>
   <data name="EmailHint" xml:space="preserve">
     <value>Dirección de email</value>
   </data>

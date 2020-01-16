@@ -21,5 +21,10 @@ namespace EasyClean.Pages
         {
             App.Current.MainPage = new LoginPage();
         }
+
+        private void btnCreateProfile_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

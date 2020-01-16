@@ -9,6 +9,7 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
+            <Button x:Name="btnCreateProfile" Clicked="btnCreateProfile_Clicked" Text="{x:Static resources:AppResources.CreateProfile}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource ConfirmButton }"/>
             <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="{x:Static resources:AppResources.Cancel}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource AlertButton }"/>
         </StackLayout>
     </ContentPage.Content>

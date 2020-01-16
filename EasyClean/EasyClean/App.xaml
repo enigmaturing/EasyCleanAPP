@@ -10,6 +10,7 @@
         <!--Buttons-->
         <Color x:Key="bgBtnColor">#3498DB</Color>
         <Color x:Key="bgBtnColorAlert">Red</Color>
+        <Color x:Key="bgBtnColorConfirm">#00FF00</Color>
         <Color x:Key="fgBtnColor">White</Color>
         <!--Labels-->
         <Color x:Key="fgTitleColor">#3498DB</Color>
@@ -31,6 +32,12 @@
         </Style>
         <Style TargetType="Button" x:Key="AlertButton">
             <Setter Property="BackgroundColor" Value="{StaticResource bgBtnColorAlert}"/>
+            <Setter Property="TextColor" Value="{StaticResource fgBtnColor}"/>
+            <Setter Property="FontFamily" Value="{StaticResource fontSensation}"/>
+            <Setter Property="CornerRadius" Value="25"/>
+        </Style>
+        <Style TargetType="Button" x:Key="ConfirmButton">
+            <Setter Property="BackgroundColor" Value="{StaticResource bgBtnColorConfirm}"/>
             <Setter Property="TextColor" Value="{StaticResource fgBtnColor}"/>
             <Setter Property="FontFamily" Value="{StaticResource fontSensation}"/>
             <Setter Property="CornerRadius" Value="25"/>
