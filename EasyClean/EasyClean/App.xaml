@@ -6,24 +6,39 @@
              mc:Ignorable="d"
              x:Class="EasyClean.App">
     <Application.Resources>
-        <!--COLORS-->
+        <!--####COLORS####-->
         <!--Buttons-->
         <Color x:Key="bgBtnColor">#3498DB</Color>
         <Color x:Key="fgBtnColor">White</Color>
         <!--Labels-->
         <Color x:Key="fgTitleColor">#3498DB</Color>
+        
+        <!--####FONTS####-->
+        <OnPlatform x:Key="fontSensation"
+            x:TypeArguments="x:String">
+            <On Platform="iOS">Sansation-Regular</On>
+            <On Platform="Android">Sansation-Regular.ttf#Sansation</On>
+        </OnPlatform>
 
-        <!--STYLES-->
+        <!--####STYLES####-->
         <!--Buttons-->
         <Style TargetType="Button" x:Key="InfoButton">
             <Setter Property="BackgroundColor" Value="{StaticResource bgBtnColor}"/>
             <Setter Property="TextColor" Value="{StaticResource fgBtnColor}"/>
+            <Setter Property="FontFamily" Value="{StaticResource fontSensation}"/>
             <Setter Property="CornerRadius" Value="25"/>
         </Style>
         <!--Labels-->
         <Style TargetType="Label" x:Key="TitleLabel">
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="TextColor" Value="{StaticResource fgTitleColor}"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource fontSensation}"/>
+        </Style>
+        <!-- Entries -->
+        <Style TargetType="Entry">
+            <Setter Property="FontFamily" Value="{StaticResource fontSensation}"/>
         </Style>
     </Application.Resources>
 </Application>
