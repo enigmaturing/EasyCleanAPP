@@ -35,7 +35,11 @@
             </StackLayout>
             <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="{x:Static resources:AppResources.NoAccount}"/>
-                <Label x:Name="labelRegister" Text="{x:Static resources:AppResources.Register}" FontAttributes="Bold"/>
+                <Label x:Name="labelRegister" Text="{x:Static resources:AppResources.Register}" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Register_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

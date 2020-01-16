@@ -21,5 +21,10 @@ namespace EasyClean.Pages
         {
             App.Current.MainPage = new MasterPage();
         }
+
+        private void Register_Tapped(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new RegisterPage();
+        }
     }
 }
