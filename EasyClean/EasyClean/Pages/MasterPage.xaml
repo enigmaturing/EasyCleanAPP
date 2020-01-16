@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="EasyClean.Pages.MasterPage">
+             x:Class="EasyClean.Pages.MasterPage"
+             xmlns:resources="clr-namespace:EasyClean.Resx">
     <MasterDetailPage.Master>
         <ContentPage Title="Master">
             <StackLayout>
-                <Button x:Name="btnMyProfile" Clicked="btnMyProfile_Clicked" Text="mein Profile" Style="{StaticResource InfoButton}"/>
-                <Button x:Name="btnMyVouchers" Clicked="btnMyVouchers_Clicked" Text="meine Gutscheine" Style="{StaticResource InfoButton}"/>
+                <Button x:Name="btnMyProfile" Clicked="btnMyProfile_Clicked" Text="{x:Static resources:AppResources.MyProfileTitle}" Style="{StaticResource InfoButton}"/>
+                <Button x:Name="btnMyVouchers" Clicked="btnMyVouchers_Clicked" Text="{x:Static resources:AppResources.MyVouchersTitle}" Style="{StaticResource InfoButton}"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

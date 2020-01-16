@@ -4,7 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="EasyClean.Pages.MyVouchers">
+             x:Class="EasyClean.Pages.MyVouchers"
+             xmlns:resources="clr-namespace:EasyClean.Resx"
+             Title="{x:Static resources:AppResources.MyVouchersTitle}">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="My Vouchures"

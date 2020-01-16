@@ -15,7 +15,7 @@ namespace EasyClean.Pages
         public MyProfilePage()
         {
             InitializeComponent();
-            Title = "mein Profile";
+            //Title = "mein Profile";
         }
     }
 }
