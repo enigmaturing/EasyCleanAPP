@@ -5,12 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyClean.Pages.RegisterPage"
+             xmlns:resources="clr-namespace:EasyClean.Resx"
              BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="{x:Static resources:AppResources.Cancel}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource AlertButton }"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

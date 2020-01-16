@@ -16,5 +16,10 @@ namespace EasyClean.Pages
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new LoginPage();
+        }
     }
 }
