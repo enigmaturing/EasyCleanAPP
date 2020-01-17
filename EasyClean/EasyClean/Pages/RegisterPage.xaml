@@ -24,6 +24,7 @@
                     <Entry x:Name="entryCity" Placeholder="{x:Static resources:AppResources.CityHint}"/>
                     <Entry x:Name="entryPassword1" Placeholder="{x:Static resources:AppResources.PasswordHint}"/>
                     <Entry x:Name="entryPassword2" Placeholder="{x:Static resources:AppResources.RepeatPasswordHint}"/>
+                    <ActivityIndicator x:Name="activityIndicator"/>
                 </StackLayout>
             </StackLayout>
             <StackLayout Margin="20">

@@ -28,6 +28,8 @@ namespace EasyClean.Pages
             ApiServices apiServices = new ApiServices();
             if (entryPassword1.Text == entryPassword2.Text)
             {
+                activityIndicator.IsVisible = true;
+                activityIndicator.IsRunning = true;
                 bool response = await apiServices.RegisterUser(entryEmail.Text, entryPassword1.Text, entryPassword2.Text);
                 if (response)
                 {
@@ -37,6 +39,8 @@ namespace EasyClean.Pages
                 {
                     await DisplayAlert("ERROR", "User profile could not be created", "OK");
                 }
+                activityIndicator.IsVisible = false;
+                activityIndicator.IsRunning = false;
             }
             else
             {
