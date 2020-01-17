@@ -1,4 +1,5 @@
-﻿using EasyClean.Services;
+﻿using EasyClean.Resx;
+using EasyClean.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,26 +26,40 @@ namespace EasyClean.Pages
 
         private async void btnCreateProfile_Clicked(object sender, EventArgs e)
         {
-            ApiServices apiServices = new ApiServices();
-            if (entryPassword1.Text == entryPassword2.Text)
+            // validate email and password
+            if (string.IsNullOrEmpty(entryEmail.Text) || string.IsNullOrEmpty(entryPassword1.Text) || string.IsNullOrEmpty(entryPassword2.Text))
             {
-                activityIndicator.IsVisible = true;
-                activityIndicator.IsRunning = true;
-                bool response = await apiServices.RegisterUser(entryEmail.Text, entryPassword1.Text, entryPassword2.Text);
-                if (response)
-                {
-                    await DisplayAlert("Success", "User profile was successfully created", "OK");
-                }
-                else
-                {
-                    await DisplayAlert("ERROR", "User profile could not be created", "OK");
-                }
-                activityIndicator.IsVisible = false;
-                activityIndicator.IsRunning = false;
+                await DisplayAlert(AppResources.Error, AppResources.EmailAndPasswordCompulsory, AppResources.OK);
+                return;
+            }
+            if (!entryEmail.Text.Contains("@") || !entryEmail.Text.Contains("."))
+            {
+                await DisplayAlert(AppResources.Error, AppResources.EmailFormatNotVaild, AppResources.OK);
+                entryEmail.Text = "";
+                return;
+            }
+            if (entryPassword1.Text != entryPassword2.Text)
+            {
+                await DisplayAlert(AppResources.Error, AppResources.PasswordsNotMatching, AppResources.OK);
+                entryPassword1.Text = "";
+                entryPassword2.Text = "";
+                return;
+            }
+
+            // register the user
+            activityIndicator.IsVisible = true;
+            activityIndicator.IsRunning = true;
+            ApiServices apiServices = new ApiServices();
+            bool response = await apiServices.RegisterUser(entryEmail.Text, entryPassword1.Text, entryPassword2.Text);
+            activityIndicator.IsVisible = false;
+            activityIndicator.IsRunning = false;
+            if (response)
+            {
+                await DisplayAlert(AppResources.Success, AppResources.UserCreated, AppResources.OK);
             }
             else
             {
-                await DisplayAlert("WARNING","Passwords do not match", "OK");
+                await DisplayAlert(AppResources.Error, AppResources.UserNotCreated, AppResources.OK);
             }
         }
     }

@@ -97,11 +97,38 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please, introduce a valid email and password.
+        /// </summary>
+        internal static string EmailAndPasswordCompulsory {
+            get {
+                return ResourceManager.GetString("EmailAndPasswordCompulsory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email format not valid.
+        /// </summary>
+        internal static string EmailFormatNotVaild {
+            get {
+                return ResourceManager.GetString("EmailFormatNotVaild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E-Mail Address.
         /// </summary>
         internal static string EmailHint {
             get {
                 return ResourceManager.GetString("EmailHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
             }
         }
         
@@ -151,11 +178,29 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string PasswordHint {
             get {
                 return ResourceManager.GetString("PasswordHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Passwords do not match.
+        /// </summary>
+        internal static string PasswordsNotMatching {
+            get {
+                return ResourceManager.GetString("PasswordsNotMatching", resourceCulture);
             }
         }
         
@@ -196,6 +241,15 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string Success {
+            get {
+                return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Surname.
         /// </summary>
         internal static string SurnameHint {
@@ -205,11 +259,47 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wellcome.
+        ///   Looks up a localized string similar to User was successfully created.
+        /// </summary>
+        internal static string UserCreated {
+            get {
+                return ResourceManager.GetString("UserCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User could not be created.
+        /// </summary>
+        internal static string UserNotCreated {
+            get {
+                return ResourceManager.GetString("UserNotCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string Warning {
+            get {
+                return ResourceManager.GetString("Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome.
         /// </summary>
         internal static string WelcomeLabel {
             get {
                 return ResourceManager.GetString("WelcomeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong email or password.
+        /// </summary>
+        internal static string WrongEmailOrPassword {
+            get {
+                return ResourceManager.GetString("WrongEmailOrPassword", resourceCulture);
             }
         }
     }

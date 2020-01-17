@@ -129,8 +129,20 @@
   <data name="CreateProfile" xml:space="preserve">
     <value>Crear perfil</value>
   </data>
+  <data name="EmailAndPasswordCompulsory" xml:space="preserve">
+    <value>Por favor, introduce un email y constraseña válidos</value>
+  </data>
+  <data name="EmailFormatNotVaild" xml:space="preserve">
+    <value>Formato de email no válido</value>
+  </data>
+  <data name="EmailFormatNotVaild1" xml:space="preserve">
+    <value>Formato de email no válido</value>
+  </data>
   <data name="EmailHint" xml:space="preserve">
     <value>Dirección de email</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
@@ -147,8 +159,14 @@
   <data name="NoAccount" xml:space="preserve">
     <value>¿No tienes aún una cuenta?</value>
   </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="PasswordHint" xml:space="preserve">
     <value>Contraseña</value>
+  </data>
+  <data name="PasswordsNotMatching" xml:space="preserve">
+    <value>Las constraseñas no son idénticas</value>
   </data>
   <data name="PostalCodeHint" xml:space="preserve">
     <value>Código Postal</value>
@@ -162,10 +180,25 @@
   <data name="Save" xml:space="preserve">
     <value>Guardar</value>
   </data>
+  <data name="Success" xml:space="preserve">
+    <value>Éxito</value>
+  </data>
   <data name="SurnameHint" xml:space="preserve">
     <value>Apellidos</value>
   </data>
+  <data name="UserCreated" xml:space="preserve">
+    <value>El usuario fue creado con éxito</value>
+  </data>
+  <data name="UserNotCreated" xml:space="preserve">
+    <value>El usuario no pudo ser creado</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Atención</value>
+  </data>
   <data name="WelcomeLabel" xml:space="preserve">
     <value>Bienvenido</value>
+  </data>
+  <data name="WrongEmailOrPassword" xml:space="preserve">
+    <value>Email o constraseña incorrectos</value>
   </data>
 </root>

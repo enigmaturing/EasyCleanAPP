@@ -1,4 +1,5 @@
-﻿using EasyClean.Services;
+﻿using EasyClean.Resx;
+using EasyClean.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,14 +21,16 @@ namespace EasyClean.Pages
 
         private async void btnLogin_Clicked(object sender, EventArgs e)
         {
+            // Validate email and password
             if(string.IsNullOrEmpty(entryMail.Text) || string.IsNullOrEmpty(entryPassword.Text))
             {
-                await DisplayAlert("WARNING", "Email and password are necessary to log in", "OK");
+                await DisplayAlert(AppResources.Warning, AppResources.EmailAndPasswordCompulsory, AppResources.OK);
                 return;
             }
-            ApiServices apiServices = new ApiServices();
+            // Log user in
             activityIndicator.IsVisible = true;
             activityIndicator.IsRunning = true;
+            ApiServices apiServices = new ApiServices();
             bool response = await apiServices.LoginUser(entryMail.Text, entryPassword.Text);
             activityIndicator.IsVisible = false;
             activityIndicator.IsRunning = false;
@@ -37,7 +40,8 @@ namespace EasyClean.Pages
             }
             else
             {
-                await DisplayAlert("WARNING", "Wrong email or password", "OK");
+                await DisplayAlert(AppResources.Warning, AppResources.WrongEmailOrPassword, AppResources.OK);
+                entryMail.Text = "";
             }
         }
 

@@ -129,8 +129,17 @@
   <data name="CreateProfile" xml:space="preserve">
     <value>Create profile</value>
   </data>
+  <data name="EmailAndPasswordCompulsory" xml:space="preserve">
+    <value>Please, introduce a valid email and password</value>
+  </data>
+  <data name="EmailFormatNotVaild" xml:space="preserve">
+    <value>Email format not valid</value>
+  </data>
   <data name="EmailHint" xml:space="preserve">
     <value>E-Mail Address</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
@@ -147,8 +156,14 @@
   <data name="NoAccount" xml:space="preserve">
     <value>You don't have an account yet?</value>
   </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="PasswordHint" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="PasswordsNotMatching" xml:space="preserve">
+    <value>Passwords do not match</value>
   </data>
   <data name="PostalCodeHint" xml:space="preserve">
     <value>Postal Code</value>
@@ -162,10 +177,25 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
   <data name="SurnameHint" xml:space="preserve">
     <value>Surname</value>
   </data>
+  <data name="UserCreated" xml:space="preserve">
+    <value>User was successfully created</value>
+  </data>
+  <data name="UserNotCreated" xml:space="preserve">
+    <value>User could not be created</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
   <data name="WelcomeLabel" xml:space="preserve">
-    <value>Wellcome</value>
+    <value>Welcome</value>
+  </data>
+  <data name="WrongEmailOrPassword" xml:space="preserve">
+    <value>Wrong email or password</value>
   </data>
 </root>
