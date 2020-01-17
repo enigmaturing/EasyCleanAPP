@@ -156,6 +156,9 @@
   <data name="Register" xml:space="preserve">
     <value>ANMELDEN</value>
   </data>
+  <data name="RepeatPasswordHint" xml:space="preserve">
+    <value>Passwort wiederholen</value>
+  </data>
   <data name="Save" xml:space="preserve">
     <value>Speichern</value>
   </data>

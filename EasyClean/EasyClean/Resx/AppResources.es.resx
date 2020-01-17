@@ -156,6 +156,9 @@
   <data name="Register" xml:space="preserve">
     <value>CREA UNA</value>
   </data>
+  <data name="RepeatPasswordHint" xml:space="preserve">
+    <value>Repite tu password</value>
+  </data>
   <data name="Save" xml:space="preserve">
     <value>Guardar</value>
   </data>

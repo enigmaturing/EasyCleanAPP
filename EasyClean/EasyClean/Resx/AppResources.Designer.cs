@@ -178,6 +178,15 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Repeat password.
+        /// </summary>
+        internal static string RepeatPasswordHint {
+            get {
+                return ResourceManager.GetString("RepeatPasswordHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         internal static string Save {

@@ -22,6 +22,8 @@
                     <Entry x:Name="entryAddress" Placeholder="{x:Static resources:AppResources.AddressHint}"/>
                     <Entry x:Name="entryPostalCode" Placeholder="{x:Static resources:AppResources.PostalCodeHint}"/>
                     <Entry x:Name="entryCity" Placeholder="{x:Static resources:AppResources.CityHint}"/>
+                    <Entry x:Name="entryPassword1" Placeholder="{x:Static resources:AppResources.PasswordHint}"/>
+                    <Entry x:Name="entryPassword2" Placeholder="{x:Static resources:AppResources.RepeatPasswordHint}"/>
                 </StackLayout>
             </StackLayout>
             <StackLayout Margin="20">

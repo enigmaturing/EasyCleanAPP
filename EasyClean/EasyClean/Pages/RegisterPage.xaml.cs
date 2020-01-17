@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyClean.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,9 +23,25 @@ namespace EasyClean.Pages
             App.Current.MainPage = new LoginPage();
         }
 
-        private void btnCreateProfile_Clicked(object sender, EventArgs e)
+        private async void btnCreateProfile_Clicked(object sender, EventArgs e)
         {
-
+            ApiServices apiServices = new ApiServices();
+            if (entryPassword1.Text == entryPassword2.Text)
+            {
+                bool response = await apiServices.RegisterUser(entryEmail.Text, entryPassword1.Text, entryPassword2.Text);
+                if (response)
+                {
+                    await DisplayAlert("Success", "User profile was successfully created", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("ERROR", "User profile could not be created", "OK");
+                }
+            }
+            else
+            {
+                await DisplayAlert("WARNING","Passwords do not match", "OK");
+            }
         }
     }
 }
