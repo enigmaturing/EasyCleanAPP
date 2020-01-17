@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddressHint" xml:space="preserve">
+    <value>Address</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
+  </data>
+  <data name="CityHint" xml:space="preserve">
+    <value>City</value>
   </data>
   <data name="CreateProfile" xml:space="preserve">
     <value>Create profile</value>
@@ -135,14 +141,26 @@
   <data name="MyVouchersTitle" xml:space="preserve">
     <value>My vouchers</value>
   </data>
+  <data name="NameHint" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="NoAccount" xml:space="preserve">
     <value>You don't have an account yet?</value>
   </data>
   <data name="PasswordHint" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="PostalCodeHint" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>SIGN UP</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SurnameHint" xml:space="preserve">
+    <value>Surname</value>
   </data>
   <data name="WelcomeLabel" xml:space="preserve">
     <value>Wellcome</value>

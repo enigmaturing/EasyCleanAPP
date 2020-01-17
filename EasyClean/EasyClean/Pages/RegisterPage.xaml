@@ -8,9 +8,26 @@
              xmlns:resources="clr-namespace:EasyClean.Resx"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Button x:Name="btnCreateProfile" Clicked="btnCreateProfile_Clicked" Text="{x:Static resources:AppResources.CreateProfile}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource ConfirmButton }"/>
-            <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="{x:Static resources:AppResources.Cancel}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource AlertButton }"/>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image x:Name="profileImage" HeightRequest="150" WidthRequest="150" Source="defaultProfileImage"/>
+                    <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="150" VerticalOptions="Center">
+                        <Entry x:Name="entryName" Placeholder="{x:Static resources:AppResources.NameHint}"/>
+                        <Entry x:Name="entrySurname" Placeholder="{x:Static resources:AppResources.SurnameHint}"/>
+                        <Entry x:Name="entryEmail" Placeholder="{x:Static resources:AppResources.EmailHint}"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Entry x:Name="entryAddress" Placeholder="{x:Static resources:AppResources.AddressHint}"/>
+                    <Entry x:Name="entryPostalCode" Placeholder="{x:Static resources:AppResources.PostalCodeHint}"/>
+                    <Entry x:Name="entryCity" Placeholder="{x:Static resources:AppResources.CityHint}"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="20">
+                <Button x:Name="btnCreateProfile" Clicked="btnCreateProfile_Clicked" Text="{x:Static resources:AppResources.CreateProfile}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource ConfirmButton }"/>
+                <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="{x:Static resources:AppResources.Cancel}" Margin="0,10,0,0" FontSize="20" FontAttributes="Bold" Style="{StaticResource AlertButton }"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

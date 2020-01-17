@@ -161,4 +161,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\user%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defaultProfileImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defaultProfileImage%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defaultProfileImage%403x.png" />
+  </ItemGroup>
 </Project>

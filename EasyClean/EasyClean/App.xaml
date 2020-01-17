@@ -10,7 +10,7 @@
         <!--Buttons-->
         <Color x:Key="bgBtnColor">#3498DB</Color>
         <Color x:Key="bgBtnColorAlert">Red</Color>
-        <Color x:Key="bgBtnColorConfirm">#00FF00</Color>
+        <Color x:Key="bgBtnColorConfirm">#25DB25</Color>
         <Color x:Key="fgBtnColor">White</Color>
         <!--Labels-->
         <Color x:Key="fgTitleColor">#3498DB</Color>

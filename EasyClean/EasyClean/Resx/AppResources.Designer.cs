@@ -61,11 +61,29 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string AddressHint {
+            get {
+                return ResourceManager.GetString("AddressHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        internal static string CityHint {
+            get {
+                return ResourceManager.GetString("CityHint", resourceCulture);
             }
         }
         
@@ -115,6 +133,15 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string NameHint {
+            get {
+                return ResourceManager.GetString("NameHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You don&apos;t have an account yet?.
         /// </summary>
         internal static string NoAccount {
@@ -133,11 +160,38 @@ namespace EasyClean.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Postal Code.
+        /// </summary>
+        internal static string PostalCodeHint {
+            get {
+                return ResourceManager.GetString("PostalCodeHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SIGN UP.
         /// </summary>
         internal static string Register {
             get {
                 return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Surname.
+        /// </summary>
+        internal static string SurnameHint {
+            get {
+                return ResourceManager.GetString("SurnameHint", resourceCulture);
             }
         }
         
